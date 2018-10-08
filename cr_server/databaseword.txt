@@ -1,0 +1,50 @@
+CREATE TABLE username
+(
+user_id	 int  NOT NULL  AUTO_INCREMENT,
+user_name  char(20) NOT NULL ,
+password char(20)  NOT NULL,
+PRIMARY KEY (user_id)
+) ENGINE=InnoDB;
+
+INSERT INTO username(user_id ,
+user_name  ,
+password 
+)
+VALUES(1,
+'Administrator',
+'1234');
+
+INSERT INTO username(user_id,
+user_name  ,
+password 
+)
+VALUES(2,
+'netease1',
+'123');
+
+INSERT INTO username(user_id,
+user_name  ,
+password 
+)
+VALUES(3,
+'netease2',
+'123');
+
+INSERT INTO username(user_id ,
+user_name  ,
+password 
+)
+VALUES(4,
+'netease3',
+'123');
+
+INSERT INTO username(user_id ,
+user_name  ,
+password 
+)
+VALUES(5,
+'netease4',
+'123');
+
+
+SELECT user_id FROM username WHERE user_name = 'netease1'; 
